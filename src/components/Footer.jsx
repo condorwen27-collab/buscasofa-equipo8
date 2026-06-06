@@ -2,16 +2,22 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-        <h2>Miembros del equipo:</h2>
-        <ul>
-            <li>Javier García</li>
-            <li>Javier López</li>
-            <li>Javier Martínez</li>
-            <li>Javier Pérez</li>
-            <li>Javier Rodríguez</li>
-        </ul>
-    </div>
+    <footer data-cy="footer" style={{
+      background: '#1e3a5f',
+      color: '#cbd5e1',
+      padding: '1.5rem',
+      marginTop: '2rem',
+      textAlign: 'center'
+    }}>
+      <h3 style={{ color: 'white', marginBottom: '0.8rem' }}>
+        Equipo 8
+      </h3>
+      <ul data-cy="footer-members" style={{ listStyle: 'none', padding: 0 }}>
+        <li data-cy="member-name">Raúl Llamas Yáñez</li>
+        <li data-cy="member-name">Oscar Martinez Moreno</li>
+        <li data-cy="member-name">Wendy Condor Saragosin</li>
+      </ul>
+    </footer>
   )
 }
 

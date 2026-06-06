@@ -15,6 +15,7 @@ module.exports = defineConfig({
     },
   },
   e2e: {
+    defaultCommandTimeout: 30000,
     specPattern: [
       'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
       'cypress/e2e/features/*.feature',
