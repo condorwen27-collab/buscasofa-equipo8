@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Form.css';
 
 function Register() {
@@ -27,6 +28,7 @@ function Register() {
       <input name="password" type="password" placeholder="Contraseña" onChange={handleChange} required />
       <button type="submit">Registrarse</button>
       {msg && <p>{msg}</p>}
+      <p>¿Ya tienes cuenta? <Link to="/login">Inicia sesión</Link></p>
     </form>
   );
 }
