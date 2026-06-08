@@ -18,10 +18,9 @@ describe('Footer del Equipo 8', () => {
       .should('be.visible');
   });
 
-  it('El footer muestra los 3 nombres del equipo', () => {
+  it('El footer muestra los 2 nombres del equipo', () => {
     const nombres = [
       'Raúl Llamas Yáñez',
-      'Oscar Martinez Moreno',
       'Wendy Condor Saragosin'
     ];
     nombres.forEach(nombre => {
@@ -31,10 +30,10 @@ describe('Footer del Equipo 8', () => {
     });
   });
 
-  it('El footer tiene exactamente 3 miembros', () => {
+  it('El footer tiene exactamente 2 miembros', () => {
     cy.get('[data-cy=footer]')
       .find('[data-cy=member-name]')
-      .should('have.length', 3);
+      .should('have.length', 2);
   });
 
   it('El footer también aparece en la página /about', () => {

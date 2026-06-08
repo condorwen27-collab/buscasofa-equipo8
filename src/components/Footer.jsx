@@ -14,7 +14,6 @@ const Footer = () => {
       </h3>
       <ul data-cy="footer-members" style={{ listStyle: 'none', padding: 0 }}>
         <li data-cy="member-name" className="member-name">Raúl Llamas Yáñez</li>
-        <li data-cy="member-name" className="member-name">Oscar Martinez Moreno</li>
         <li data-cy="member-name" className="member-name">Wendy Condor Saragosin</li>
       </ul>
     </footer>
